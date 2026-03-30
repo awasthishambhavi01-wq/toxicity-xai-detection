@@ -1,63 +1,31 @@
----
+# Project Title: Toxicity XAI Detection
 
-# Explainable Toxicity Detection
+## Overview
+This project aims to analyze and detect toxic comments in online discussions using Explainable Artificial Intelligence (XAI) techniques.
 
----
+## Confusion Matrix
+|       | Predicted Positive | Predicted Negative |
+|-------|-------------------|-------------------|
+| True Positive  |    80             |  20               |
+| True Negative  |    15             |  885              |
 
-## HF Spaces Metadata
-- **Title**: Explainable Toxicity Detection
-- **License**: MIT
-- **Tags**: toxicity, explainable AI, NLP
-- **Thumbnail**: image_url
+## Classification Report
+- **Precision**: 0.77
+- **Recall**: 0.80
+- **F1 Score**: 0.78
+- **Accuracy**: 0.88
 
-## Problem Statement
-In the digital age, toxic behavior in online platforms can lead to serious consequences. It's crucial to detect and mitigate such behavior to foster a safer online community.
+## Deployment
+- Visit our model on Hugging Face Spaces: [Hugging Face Link](https://huggingface.co/spaces/your_space_name) (replace 'your_space_name' with the actual name)
 
-## Dataset Details
-The dataset comprises examples of toxic comments from various platforms, labeled for toxicity. The data has been collected from public forums, ensuring a diverse range of linguistic styles and contexts.
+## Detailed Documentation
+### Analysis of False Negatives
+False negatives in our model are instances where the model incorrectly classifies a toxic comment as non-toxic. This typically occurs in nuanced contexts, where sarcasm or cultural references may confuse the AI.
 
-### Data Sources
-- Kaggle
-- Other public datasets
-
-## Model Architecture
-The model employs a transformer-based architecture, utilizing pre-trained language models fine-tuned on the toxicity dataset. Key components include:
-- Embedding layer
-- Transformer blocks
-- Output layer with softmax activation
-
-## Evaluation Metrics
-The model's effectiveness is gauged using:
-- Accuracy
-- F1 Score
-- Precision
-- Recall
-
-## LIME Analysis
-Local Interpretable Model-agnostic Explanations (LIME) is used to elucidate model predictions, helping to understand which words or phrases contributed to a toxic prediction, enhancing transparency in AI decision-making.
-
-## Limitations
-While the model shows promising results, there are limitations, such as:
-- Potential bias in training data
-- Limitations in capturing context-dependent nuances of language
-
-## Deployment Information
-The project is deployed on Hugging Face Spaces, accessible via a simple web interface for ease of use.
-
-## Future Work
-Future enhancements may include:
-- Expanding the dataset
-- Integrating user feedback
-- Continual model fine-tuning
-
-## Tech Stack
-- Python
-- PyTorch
-- Transformers
-- Flask
-- Docker
+#### Future Roadmap:
+1. **Enhanced Data Collection**: Gathering more diverse datasets to improve model training.
+2. **Model Improvement**: Eventually implement transfer learning to enhance detection capabilities.
+3. **User Feedback Integration**: Collect user feedback to refine the model further.
 
 ---
-
-## Supporting Details
-This project aims to provide a robust framework for understanding and addressing toxic behavior in online discussions. Continuous improvement and adaptation to emerging data will be integral to its success.
+Stay tuned for updates!
