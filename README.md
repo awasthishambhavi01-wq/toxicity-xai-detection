@@ -17,10 +17,13 @@ This project aims to analyze and detect toxic comments in online discussions usi
 
 ## Deployment
 - Visit our model on Hugging Face Spaces: [Hugging Face Link](https://huggingface.co/spaces/awasthishambhavi01/explainable-toxicity-detection)
+  ![Prediction output1](ssml1.png)
+  ![Prediction output2](ssml3.png)
 
 ## 🔍 LIME Explanations
 
 The screenshot below demonstrates LIME (Local Interpretable Model-agnostic Explanations) applied to a toxic text prediction.
+![LIME Output](ssml2.png)
 
 ### LIME Analysis Details
 
@@ -65,7 +68,4 @@ False negatives in our model are instances where the model incorrectly classifie
 - LIME (Explainability)
 - Scikit-learn
 
-## 🚀 How to Run Locally
-```bash
-pip install -r requirements.txt
-python app.py
+
