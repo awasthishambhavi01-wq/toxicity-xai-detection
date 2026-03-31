@@ -16,7 +16,7 @@ This project aims to analyze and detect toxic comments in online discussions usi
 - **Accuracy**: 0.88
 
 ## Deployment
-- Visit our model on Hugging Face Spaces: [Hugging Face Link](https://huggingface.co/spaces/your_space_name) (replace 'your_space_name' with the actual name)
+- Visit our model on Hugging Face Spaces: [Hugging Face Link](https://huggingface.co/spaces/awasthishambhavi01/explainable-toxicity-detection)
 
 ## Detailed Documentation
 ### Analysis of False Negatives
