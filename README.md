@@ -1,31 +1,13 @@
-# Project Title: Toxicity XAI Detection
+# README
 
-## Overview
-This project aims to analyze and detect toxic comments in online discussions using Explainable Artificial Intelligence (XAI) techniques.
+## 🔍 LIME Explanations
 
-## Confusion Matrix
-|       | Predicted Positive | Predicted Negative |
-|-------|-------------------|-------------------|
-| True Positive  |    80             |  20               |
-| True Negative  |    15             |  885              |
+The LIME (Local Interpretable Model-agnostic Explanations) technique provides insights into model predictions by highlighting the contributions of individual input features. In the LIME screenshot, we observe the prediction probabilities as follows:
+- **Non-Toxic:** 0.98
+- **Toxic:** 0.02
 
-## Classification Report
-- **Precision**: 0.77
-- **Recall**: 0.80
-- **F1 Score**: 0.78
-- **Accuracy**: 0.88
+The highlighted words indicate their impact on the prediction:
+- **Orange** highlights the contributions that led to a **Toxic** prediction.
+- **Blue** shows the words that contributed to a **Non-Toxic** prediction.
 
-## Deployment
-- Visit our model on Hugging Face Spaces: [Hugging Face Link](https://huggingface.co/spaces/awasthishambhavi01/explainable-toxicity-detection)
-
-## Detailed Documentation
-### Analysis of False Negatives
-False negatives in our model are instances where the model incorrectly classifies a toxic comment as non-toxic. This typically occurs in nuanced contexts, where sarcasm or cultural references may confuse the AI.
-
-#### Future Roadmap:
-1. **Enhanced Data Collection**: Gathering more diverse datasets to improve model training.
-2. **Model Improvement**: Eventually implement transfer learning to enhance detection capabilities.
-3. **User Feedback Integration**: Collect user feedback to refine the model further.
-
----
-Stay tuned for updates!
+This visual representation assists users in understanding how specific words influence the model's decision-making process, making the model's behavior more transparent and interpretable.
